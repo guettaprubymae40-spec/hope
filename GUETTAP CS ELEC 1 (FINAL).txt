@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Summer Destinations</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #e8f7ff;
+        }
+
+        /* NAVIGATION BAR */
+        nav {
+            background: #008cba;
+            padding: 15px;
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        header {
+            text-align: center;
+            padding: 25px;
+            background: #00aaff;
+            color: white;
+            font-size: 32px;
+            font-weight: bold;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1000px;
+            margin: 30px auto;
+        }
+
+        /* DESTINATION CARDS */
+        .card {
+            background: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 15px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        .description {
+            display: none;
+            padding-top: 10px;
+            font-size: 15px;
+            line-height: 1.6;
+        }
+
+        .place-title {
+            color: #0077aa;
+            font-size: 22px;
+            margin-top: 10px;
+        }
+    </style>
+
+    <script>
+        function toggleDescription(id) {
+            var desc = document.getElementById(id);
+            desc.style.display = desc.style.display === "block" ? "none" : "block";
+        }
+    </script>
+
+</head>
+<body>
+
+    <!-- NAVIGATION BAR -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#destinations">Destinations</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- HEADER -->
+    <header id="home">
+        Explore the Most Beautiful Places to Visit During Summer
+    </header>
+
+    <div class="container" id="destinations">
+
+        <!-- CARD 1 -->
+        <div class="card">
+            <img src="https://i.ibb.co/8NZYwqW/beach.jpg" 
+                 onclick="toggleDescription('desc1')">
+            <h2 class="place-title">Bora Bora, French Polynesia</h2>
+            <p id="desc1" class="description">
+                Known for its turquoise waters, overwater bungalows, and luxurious views, 
+                Bora Bora is one of the top summer destinations in the world.
+            </p>
+        </div>
+
+        <!-- CARD 2 -->
+        <div class="card">
+            <img src="https://i.ibb.co/7vwGf7F/santorini.jpg" 
+                 onclick="toggleDescription('desc2')">
+            <h2 class="place-title">Santorini, Greece</h2>
+            <p id="desc2" class="description">
+                Famous for its white buildings and stunning sunsets, 
+                Santorini offers breathtaking scenery and unforgettable summer experiences.
+            </p>
+        </div>
+
+        <!-- CARD 3 -->
+        <div class="card">
+            <img src="https://i.ibb.co/FxnZCJf/bali.jpg" 
+                 onclick="toggleDescription('desc3')">
+            <h2 class="place-title">Bali, Indonesia</h2>
+            <p id="desc3" class="description">
+                A tropical paradise known for beaches, green rice terraces, and peaceful nature—perfect for summer getaways.
+            </p>
+        </div>
+
+    </div>
+
+    <!-- CONTACT SECTION -->
+    <div class="container" id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: travelworld@example.com</p>
+        <p>Phone: +123 456 789</p>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-5">
+    <title>Summer Destinations</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #7C2529;
+        }
+
+        /* NAVIGATION BAR */
+        nav {
+            background: #862633;
+            padding: 15px;
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        header {
+            text-align: center;
+            padding: 25px;
+            background: #7C2529;
+            color: white;
+            font-size: 32px;
+            font-weight: bold;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 500px;
+            margin: 30px auto;
+        }
+
+        /* DESTINATION CARDS */
+        .card {
+            background: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 15px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        .description {
+            display: none;
+            padding-top: 10px;
+            font-size: 15px;
+            line-height: 1.6;
+        }
+
+        .place-title {
+            color: #7C2529;
+            font-size: 22px;
+            margin-top: 10px;
+        }
+    </style>
+
+    <script>
+        function toggleDescription(id) {
+            var desc = document.getElementById(id);
+            desc.style.display = desc.style.display === "block" ? "none" : "block";
+        }
+    </script>
+
+</head>
+<body>
+
+    <!-- NAVIGATION BAR -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#destinations">Destinations</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- HEADER -->
+<h1 ALIGN ="CENTER"><FONT COLOR =WHITE><B><U><MARQUEE BEHAVIOR=ALTERNATE>
+Top 10 Summer Destination in the World</MARQUEE></U></B></FONT></h1>
+<!-- 1 -->
+</body>
+
+    <div class="container" id="destinations">
+
+ <style>
+        img {
+            width: 150px;
+            height: 200px;
+            cursor: pointer;
+            border: 2px solid #333;
+            border-radius: 2px;
+        }
+        .place {
+            margin-bottom: 20px;
+        }
+        .explanation {
+            display: none;
+            width: 1600px;
+            padding: 10px;
+            border: 1px solid #999;
+            border-radius: 5px;
+            background: #f2f2f2;
+            margin-top: 5px;
+        }
+    </style>
+
+ <script>
+        function toggleExplanation(id) {
+            var info = document.getElementById(id);
+            if (info.style.display === "none") {
+                info.style.display = "block";
+            } else {
+                info.style.display = "none";
+            }
+        }
+    </script>
+
+
+        <!-- CARD 1 -->
+        <div class="card">
+            <img src="https://www.romeanditaly.com/wp-content/uploads/2019/11/Amalfi-Coast-Tour-07-min.jpg" 
+                 onclick="toggleDescription('desc1')">
+            <h2 class="place-title">Amalfi Coast</h2>
+            <p id="desc1" class="description">
+                 If gorgeous coastal views and sips of limoncello signify summer for you, head to the Amalfi Coast. Summers in this picturesque Italian destination feature hot temperatures (daytime highs often reach the 90s) and lively festivals. Take your pick among 13 seaside towns overlooking the Tyrrhenian Sea. You can indulge in fine dining and luxury resorts in Positano (Il San Pietro and Le Sirenuse are two top spots); take a boat tour to rugged grottos in Capri; or wander through lemon groves in Sorrento. Just note: Wherever you choose to stay, you can expect an endless stream of crowds and traffic at this time of year
+        </p>
+            </p>
+        </div>
+
+        <!-- CARD 2 -->
+        <div class="card">
+            <img src="https://holidaysdeluxe.co.uk/assets/images/website_108-multiimage_80555_background-cyprus%20holiday.jpg-BasicCrop.jpg" 
+                 onclick="toggleDescription('desc2')">
+            <h2 class="place-title">Cyprus</h2>
+            <p id="desc2" class="description">
+                  A Mediterranean island located about 40 miles south of Turkey, Cyprus experiences hot, dry summers (daytime temperatures climb into the 90s) and promises plenty of things to do and see. Summer is festival season, so travelers can immerse themselves in local culture at events like the Kataklysmos Festival in June and the Potato Festival in July. History buffs will love visiting the Tombs of the Kings and other ancient ruins at UNESCO-listed Kato Paphos Archaeological Park. Meanwhile, those looking to relax seaside will love the warm sand and turquoise water at Nissi Beach and Fig Tree Bay.
+            </p>
+        </div>
+
+        <!-- CARD 3 -->
+        <div class="card">
+            <img src="https://www.tripsavvy.com/thmb/BfFKLoQyN2GB7PMxWqS-S6aZdX8=/3600x2400/filters:fill(auto,1)/glacier-national-park-56a8179f5f9b58b7d0f08cd8.jpg" 
+                 onclick="toggleDescription('desc3')">
+            <h2 class="place-title">Glacier National Park</h2>
+            <p id="desc3" class="description">
+                 Glacier National Park is open 365 days a year, but summertime brings out the best of this Montana gem. Temperatures rest comfortably in the 70s to mid-80s during the day, though they dip to the 40s at night. Spend your trip hiking through more than 700 miles of trails, camping in one of 13 campgrounds and taking in spectacular views along Going-to-the-Sun Road (the entire stretch of which normally opens by early July). Just keep in mind: This season also brings the most people. Consider starting your days before sunrise to ensure you get a parking spot at high-traffic locations like Avalanche Creek and Logan Pass. 
+            </p>
+        </div>
+
+ <!-- CARD 4 -->
+        <div class="card">
+            <img src="https://wallpaperaccess.com/full/5923748.jpg" 
+                 onclick="toggleDescription('desc4')">
+            <h2 class="place-title">Bali</h2>
+            <p id="desc4" class="description">
+                  Summer is a great time to visit Bali because it falls within the Indonesian destination's dry season. Plus, daytime temperatures consistently stay in the 80s. This summertime climate is optimal for exploring the island's beautiful attractions, including its beaches and outdoor temples, without running the risk of getting heatstroke. Plan to visit Tegallalang Rice Terrace, Tirta Gangga water palace and other picture-perfect sites during your trip. Since popular areas will be crowded, you may want to consider booking a local guide who can help you make the most of your trip.            </p>
+        </div>
+
+ <!-- CARD 5 -->
+        <div class="card">
+            <img src="https://www.tripsavvy.com/thmb/IZCGtvPSSwbHFNEiv3sfGprjVVQ=/2121x1413/filters:fill(auto,1)/a-tropical-island-with-yachts-and-houses-in-bermuda-1159363129-5316649ef24d48f9b2a87c6cffcfbf30.jpg" 
+                 onclick="toggleDescription('desc5')">
+            <h2 class="place-title">Bermuda</h2>
+            <p id="desc5" class="description">
+                 If you're looking to chill out along some of the world's most beautiful shorelines during your summer vacation, choose Bermuda. Temperatures typically sit in the low 80s throughout the summer, so you can enjoy swimming in warmer Atlantic waters; you'll want to jump in to beat the season's dense humidity. Traveler-favorite beaches include Horseshoe Bay Beach (a beloved pink sand option), Elbow Beach (a quiet escape) and Warwick Long Bay Beach (a heavenly half-mile stretch). Unlike Caribbean islands, Bermuda is rarely directly hit by hurricanes at this time of year, thanks to its location and small size.
+            </p>
+        </div>
+
+ <!-- CARD 6 -->
+        <div class="card">
+            <img src="https://live.staticflickr.com/3845/14908212616_c084daed56_b.jpg" 
+                 onclick="toggleDescription('desc6')">
+            <h2 class="place-title">Paris</h2>
+            <p id="desc6" class="description">
+Daytime temperatures in the 70s make summer one of the best times to wander around the City of Light. Dine alfresco at a cafe along the Champs-Élysées, watch lively locals move through the trendy Le Marais neighborhood or have a picnic at the Luxembourg Gardens or on the lawns in front of the Eiffel Tower. Paris' summer calendar is also packed with outdoor festivals guaranteed to enhance your joie de vivre. The only cons: bigger crowds and higher prices on hotel rooms. Plan to visit world-renowned attractions like the Louvre first thing in the morning or later in the evening to avoid hordes of tourists
+          </p>
+        </div>
+
+ <!-- CARD 7 -->
+        <div class="card">
+            <img src="https://media.grandvoyage.com/__sized__/voyages/5_XdiVvH3-thumbnail-1024x512-70.jpg" 
+                 onclick="toggleDescription('desc7')">
+            <h2 class="place-title">Rio De Janeiro</h2>
+            <p id="desc7" class="description">
+   Though June, July and August are technically Rio's winter months, you can expect comfortable lows in the 60s. This means exploring Rio's many outdoor offerings will be an incredibly enjoyable pursuit. Sink your toes into famous sands, such as Ipanema and Copacabana beaches, explore one of the largest urban forests on the planet (Tijuca National Park) and hit up one of the New Seven Wonders of the World (Christ the Redeemer). You may also find better rates on hotels than during Rio's busy summer months (December to March). While you won't find Carnival-level revelry this time of year, visit in June to celebrate Brazilian culture during Festa Junina
+        </div>
+
+ <!-- CARD 8 -->
+        <div class="card">
+            <img src="https://cdn.boatinternational.com/convert/files/2021/09/6e257900-2107-11ec-9b8a-f796aadf77c4-azores%20island%20Vila%20Franca%20do%20Campo%20ARoxo%20via%20Getty%20Images.jpg/r[width]=1920/6e257900-2107-11ec-9b8a-f796aadf77c4-azores%20island%20Vila%20Franca%20do%20Campo%20ARoxo%20via%20Getty%20Images.jpg" 
+                 onclick="toggleDescription('desc8')">
+            <h2 class="place-title">The Azores</h2>
+            <p id="desc8" class="description">
+                  With mild temperatures year-round, there is really no bad time to visit the Azores, a Portuguese island chain in the Atlantic Ocean. These nine islands are replete with natural splendors, ranging from lava caves to calderas to lush forests. Summer brings some of the warmest temperatures – typically reaching the 70s – and driest weather, making it the perfect time to check out the islands' beaches and top dive sites. Plus, these months are filled with cultural events, like the Walk&Talk street art festival on the islands of São Miguel and Terceira and the Maré de Agosto music festival on Santa Maria
+            </p>
+        </div>
+
+ <!-- CARD 9 -->
+        <div class="card">
+            <img src="https://hotgetaways.com.au/wp-content/uploads/2015/09/great-barrier-reef-north-queensland.jpg" 
+                 onclick="toggleDescription('desc9')">
+            <h2 class="place-title">Great Barrier Reef</h2>
+            <p id="desc9" class="description">
+                Looking for a once-in-a-lifetime summer vacation? Plan a trip down under to the world's largest coral reef. Australia's Great Barrier Reef offers some of the most scenic snorkeling and diving on the globe at hot spots like Osprey Reef and Heron Island. And, believe it or not, your tourism dollars can help protect this quickly declining natural wonder. However, you don't have to be a diver to fully enjoy this region. Sailing on the open ocean and kicking back on a Whitsunday Islands beach will no doubt satisfy relaxation seekers, while the Kuranda Scenic Railway is perfect for those looking to explore the mainland.
+            </p>
+        </div>
+ <!-- CARD 10 -->
+        <div class="card">
+            <img src="https://img.rasset.ie/001578d0-1600.jpg" 
+                 onclick="toggleDescription('desc10')">
+            <h2 class="place-title"> Machu Picchu</h2>
+            <p id="desc10" class="description">
+                 Summer features fewer rain showers than other seasons in the Peruvian mountains, plus daytime highs in the 60s and 70s. This pleasant weather means experienced hikers will have terrific conditions for trekking the Inca Trail. Non-hikers can still enjoy this iconic locale (with a guide), but keep in mind that admission tickets are limited and require reservations. Because of the incredible weather during this time of year, you should expect this UNESCO World Heritage Site and the nearby city of Cusco to be busier than usual
+            </p>
+        </div>
+
+<!-- CONTACT  SECTION -->
+<section id="contact">
+    <h2>Contact Us</h2>
+
+    <form class="contact-form">
+        <label>Name:</label>
+        <input type="text" placeholder="Enter your name" required>
+
+        <label>Email:</label>
+        <input type="email" placeholder="Enter your email" required>
+
+        <label>Message:</label>
+        <textarea placeholder="Write your message here..." required></textarea>
+
+        <button type="submit">Send Message</button>
+    </form>
+</div>
+
